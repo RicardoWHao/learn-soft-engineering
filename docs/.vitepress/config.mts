@@ -46,6 +46,23 @@ export default defineConfig({
       },
 
       {
+        text: '前端',
+        items: [
+          {
+            text: 'VitePress',
+            items: [
+              { text: '01 SSG 与定位', link: '/frontend/vitepress/01-ssg' },
+              { text: '02 骨架与路由配置', link: '/frontend/vitepress/02-routing' },
+              { text: '03 默认主题', link: '/frontend/vitepress/03-default-theme' },
+              { text: '04 构建原理', link: '/frontend/vitepress/04-build' },
+              { text: '05 部署与 CI/CD', link: '/frontend/vitepress/05-deploy' },
+              { text: '06 工程进阶与排障', link: '/frontend/vitepress/06-engineering' }
+            ]
+          }
+        ]
+      },
+
+      {
         text: 'Spring 全家桶',
         items: [
           {
@@ -198,6 +215,21 @@ export default defineConfig({
           items: [
             { text: 'JDK 源码', link: '/basics/source/jdk' },
             { text: '阅读方法论', link: '/basics/source/method' }
+          ]
+        }
+      ],
+
+      '/frontend/': [
+        {
+          text: 'VitePress',
+          collapsed: false,
+          items: [
+            { text: '01 SSG 与定位', link: '/frontend/vitepress/01-ssg' },
+            { text: '02 骨架与路由配置', link: '/frontend/vitepress/02-routing' },
+            { text: '03 默认主题', link: '/frontend/vitepress/03-default-theme' },
+            { text: '04 构建原理', link: '/frontend/vitepress/04-build' },
+            { text: '05 部署与 CI/CD', link: '/frontend/vitepress/05-deploy' },
+            { text: '06 工程进阶与排障', link: '/frontend/vitepress/06-engineering' }
           ]
         }
       ],
