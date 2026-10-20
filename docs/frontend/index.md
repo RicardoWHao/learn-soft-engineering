@@ -14,31 +14,7 @@
 
 现代前端可以沿"代码在哪里运行"切成两个世界：**用户侧（浏览器运行时）**与**研发侧（Node + CI 构建时）**，二者通过"构建产物 + 部署"衔接。
 
-```text
-┌──────────────────────────────────────────────────────────────────┐
-│  用户侧 · 浏览器运行时（产物在用户机器上执行）                          │
-│                                                                    │
-│  平台标准   HTML  ·  CSS  ·  JavaScript（Web 标准 / 浏览器引擎 / Web API）│
-│     │                                                              │
-│  视图框架   Vue · React · Angular · Svelte · Solid（组件化/声明式/响应式）│
-│  路由状态   vue-router/react-router（或约定式路由） · Pinia/Redux/Zustand │
-│     │                                                              │
-│  样式 UI    组件库(Element Plus/Ant Design/Naive) · Tailwind · Sass · CSS-in-JS │
-│  数据通信   Fetch/Axios · WebSocket/SSE · GraphQL · BFF/网关          │
-└──────────────────────────────────────────────────────────────────┘
-                              ▲   构建产物（HTML/CSS/JS/图片）经 CDN 下发
-                              │   部署形态：静态托管 / Node SSR / 边缘 / Serverless
-┌──────────────────────────────────────────────────────────────────┐
-│  研发侧 · Node + CI 构建时（只在开发与发布阶段运行，用户看不到）            │
-│                                                                    │
-│  语言       TypeScript（类型系统） · ES 新语法                        │
-│  包管理     npm / pnpm / yarn（依赖、锁文件、workspace）              │
-│  构建工具   Vite / webpack / Rspack / esbuild / Rollup（编译·打包·HMR）│
-│  工程质量   ESLint/Prettier · 单测/组件测/E2E · 类型检查 · Git · CI/CD │
-│  渲染预处理 SSR/SSG 预渲染（本站为 SSG，构建期就把页面算成静态 HTML）    │
-└──────────────────────────────────────────────────────────────────┘
-        基础设施横切所有层：CDN · HTTPS · 监控(RUM/Sentry) · 安全(XSS/CSRF/CSP) · 跨端
-```
+![前端技术栈分层：浏览器运行时栈与 Node + CI 构建时栈两大世界](./images/frontend-stack.png)
 
 记住这张图的关键切分：**框架、路由、状态、UI、通信是"运行时栈"；TS、包管理、构建、Lint、测试、预渲染是"构建时栈"**。很多困惑（为什么 VitePress 不需要服务器、为什么 Shiki 高亮零运行时开销）本质都是"某件事到底发生在哪个世界"。
 
