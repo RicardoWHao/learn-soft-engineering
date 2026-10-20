@@ -5,50 +5,50 @@
     </marker>
   </defs>
 
-  <!-- 节点：x, w, 主题色, 图标, 标题, 副标题, 标签 -->
   <!-- 1 GitHub 仓库 -->
   <g>
     <rect x="30" y="150" width="190" height="150" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
-    <circle cx="62" cy="188" r="16" fill="#2563eb"/>
-    <path d="M55 193 v-7 a7 7 0 0 1 14 0 v7" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
-    <text x="125" y="194" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">GitHub 仓库</text>
-    <text x="125" y="222" text-anchor="middle" font-size="13" fill="#475569">数据源（无数据库）</text>
-    <text x="125" y="246" text-anchor="middle" font-size="13" fill="#334155">docs/**/*.md</text>
-    <text x="125" y="270" text-anchor="middle" font-size="12" fill="#94a3b8">内容即文件，Git 管版本</text>
+    <circle cx="56" cy="186" r="15" fill="#2563eb"/>
+    <path d="M56 175 l-8 4 v9 l8 -4 z M56 175 l8 4 v9 l-8 -4 z" fill="#fff" opacity="0.95"/>
+    <text x="80" y="192" text-anchor="start" font-size="18" font-weight="700" fill="#0f172a">GitHub 仓库</text>
+    <text x="48" y="222" text-anchor="start" font-size="13" fill="#475569">数据源（无数据库）</text>
+    <text x="48" y="246" text-anchor="start" font-size="13" fill="#334155">docs/**/*.md</text>
+    <text x="48" y="270" text-anchor="start" font-size="12" fill="#94a3b8">内容即文件 · Git 版本</text>
   </g>
 
   <!-- 2 GitHub Actions -->
   <g>
     <rect x="280" y="150" width="190" height="150" rx="14" fill="#fffbeb" stroke="#fde68a" stroke-width="2"/>
-    <circle cx="312" cy="188" r="16" fill="#d97706"/>
-    <path d="M307 180 l5 4 5 -4 M312 184 v6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="375" y="194" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">GitHub Actions</text>
-    <text x="375" y="222" text-anchor="middle" font-size="13" fill="#475569">CI 构建（临时虚拟机）</text>
-    <text x="375" y="246" text-anchor="middle" font-size="13" fill="#334155">npm ci · build</text>
-    <text x="375" y="270" text-anchor="middle" font-size="12" fill="#94a3b8">Markdown → HTML/CSS/JS</text>
+    <circle cx="306" cy="186" r="15" fill="#d97706"/>
+    <polygon points="301,178 301,194 313,186" fill="#fff"/>
+    <text x="330" y="192" text-anchor="start" font-size="18" font-weight="700" fill="#0f172a">GitHub Actions</text>
+    <text x="298" y="222" text-anchor="start" font-size="13" fill="#475569">CI 构建（临时虚拟机）</text>
+    <text x="298" y="246" text-anchor="start" font-size="13" fill="#334155">npm ci · build</text>
+    <text x="298" y="270" text-anchor="start" font-size="12" fill="#94a3b8">构建只执行一次</text>
   </g>
 
   <!-- 3 GitHub Pages -->
   <g>
     <rect x="530" y="150" width="190" height="150" rx="14" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="2"/>
-    <circle cx="562" cy="188" r="16" fill="#059669"/>
-    <path d="M555 188 a7 7 0 0 1 14 0 M553 188 h18 M562 181 a10 10 0 0 1 0 14 a10 10 0 0 1 0 -14" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-    <text x="625" y="194" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">GitHub Pages</text>
-    <text x="625" y="222" text-anchor="middle" font-size="13" fill="#475569">静态托管 + 全球 CDN</text>
-    <text x="625" y="246" text-anchor="middle" font-size="13" fill="#334155">dist/ 静态文件</text>
-    <text x="625" y="270" text-anchor="middle" font-size="12" fill="#94a3b8">只发文件，不跑后端</text>
+    <circle cx="556" cy="186" r="15" fill="#059669"/>
+    <circle cx="556" cy="186" r="6" stroke="#fff" stroke-width="1.8" fill="none"/>
+    <path d="M550 186 h12 M556 180 a9 9 0 0 1 0 12 a9 9 0 0 1 0 -12" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="580" y="192" text-anchor="start" font-size="18" font-weight="700" fill="#0f172a">GitHub Pages</text>
+    <text x="548" y="222" text-anchor="start" font-size="13" fill="#475569">静态托管 + 全球 CDN</text>
+    <text x="548" y="246" text-anchor="start" font-size="13" fill="#334155">dist/ 静态文件</text>
+    <text x="548" y="270" text-anchor="start" font-size="12" fill="#94a3b8">只发文件，不跑后端</text>
   </g>
 
   <!-- 4 用户浏览器 -->
   <g>
     <rect x="780" y="150" width="170" height="150" rx="14" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
-    <circle cx="812" cy="188" r="16" fill="#7c3aed"/>
-    <rect x="806" y="182" width="12" height="12" rx="2" stroke="#fff" stroke-width="1.8" fill="none"/>
-    <path d="M820 190 h4 M806 196 h18" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
-    <text x="865" y="194" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">用户浏览器</text>
-    <text x="865" y="222" text-anchor="middle" font-size="13" fill="#475569">访问公网网址</text>
-    <text x="865" y="246" text-anchor="middle" font-size="13" fill="#334155">下载 HTML/JS</text>
-    <text x="865" y="270" text-anchor="middle" font-size="12" fill="#94a3b8">水合后可交互</text>
+    <circle cx="806" cy="186" r="15" fill="#7c3aed"/>
+    <rect x="799" y="180" width="14" height="12" rx="2" stroke="#fff" stroke-width="1.8" fill="none"/>
+    <path d="M799 184 h14 M802.5 188 h7" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="830" y="192" text-anchor="start" font-size="18" font-weight="700" fill="#0f172a">用户浏览器</text>
+    <text x="798" y="222" text-anchor="start" font-size="13" fill="#475569">访问公网网址</text>
+    <text x="798" y="246" text-anchor="start" font-size="13" fill="#334155">下载 HTML/JS</text>
+    <text x="798" y="270" text-anchor="start" font-size="12" fill="#94a3b8">水合后可交互</text>
   </g>
 
   <!-- 箭头 1→2 -->
@@ -66,16 +66,10 @@
   <line x1="774" y1="238" x2="720" y2="238" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
   <rect x="693" y="106" width="108" height="22" rx="11" fill="#e2e8f0"/>
   <text x="747" y="121" text-anchor="middle" font-size="12" fill="#475569">③ HTTPS 请求</text>
-  <text x="747" y="310" text-anchor="middle" font-size="12" fill="#94a3b8">④ 返回静态文件</text>
+  <text x="747" y="322" text-anchor="middle" font-size="12" fill="#94a3b8">④ 返回静态文件</text>
 
-  <!-- 底部时间轴说明 -->
-  <text x="490" y="380" text-anchor="middle" font-size="14" fill="#475569">
-    构建期（push 后约 30~60 秒，执行一次）：仓库 → Actions 构建 → Pages
-  </text>
-  <text x="490" y="410" text-anchor="middle" font-size="14" fill="#475569">
-    访问期（每次访客打开页面）：浏览器 ⇄ Pages CDN，直接取文件，无服务器计算
-  </text>
-  <text x="490" y="445" text-anchor="middle" font-size="12.5" fill="#94a3b8">
-    数据流单向：Markdown 源码 → 构建产物 → CDN → 浏览器；访客接触不到源码
-  </text>
+  <!-- 底部说明 -->
+  <text x="490" y="385" text-anchor="middle" font-size="14" fill="#475569">构建期（push 后约 30~60 秒，执行一次）：仓库 → Actions 构建 → Pages</text>
+  <text x="490" y="415" text-anchor="middle" font-size="14" fill="#475569">访问期（每次访客打开页面）：浏览器 ⇄ Pages CDN，直接取文件，无服务器计算</text>
+  <text x="490" y="448" text-anchor="middle" font-size="12.5" fill="#94a3b8">数据流单向：Markdown 源码 → 构建产物 → CDN → 浏览器；访客接触不到源码</text>
 </svg>
