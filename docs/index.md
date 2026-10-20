@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /knowledge/java-basic
+      link: /basics/java/basic
     - theme: alt
       text: 全栈面试
       link: /interview/

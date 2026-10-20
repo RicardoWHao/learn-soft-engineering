@@ -175,7 +175,13 @@ export default defineConfig({
       },
 
       { text: '全栈面试', link: '/interview/' },
-      { text: '关于', link: '/about' }
+      {
+        text: '关于',
+        items: [
+          { text: '关于本站', link: '/about/' },
+          { text: '本站构建方法', link: '/about/build-method' }
+        ]
+      }
     ],
 
     // 左侧栏：与顶部导航分组保持一致
@@ -334,12 +340,22 @@ export default defineConfig({
           collapsed: false,
           items: [{ text: '面试总览', link: '/interview/' }]
         }
+      ],
+
+      '/about/': [
+        {
+          text: '关于',
+          collapsed: false,
+          items: [
+            { text: '关于本站', link: '/about/' },
+            { text: '本站构建方法', link: '/about/build-method' }
+          ]
+        }
       ]
     },
 
     socialLinks: [
-      // TODO: 替换为你的 GitHub 仓库地址
-      { icon: 'github', link: 'https://github.com/your-name/your-repo' }
+      { icon: 'github', link: 'https://github.com/RicardoWHao/learn-soft-engineering' }
     ],
 
     outline: {
