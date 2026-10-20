@@ -48,6 +48,7 @@ export default defineConfig({
       {
         text: '前端',
         items: [
+          { text: '技术栈总览', link: '/frontend/' },
           {
             text: 'VitePress',
             items: [
@@ -220,6 +221,10 @@ export default defineConfig({
       ],
 
       '/frontend/': [
+        {
+          text: '技术栈总览',
+          link: '/frontend/'
+        },
         {
           text: 'VitePress',
           collapsed: false,
