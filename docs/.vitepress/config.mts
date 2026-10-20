@@ -175,13 +175,7 @@ export default defineConfig({
       },
 
       { text: '全栈面试', link: '/interview/' },
-      {
-        text: '关于',
-        items: [
-          { text: '关于本站', link: '/about/' },
-          { text: '本站构建方法', link: '/about/build-method' }
-        ]
-      }
+      { text: '本站构建方法', link: '/about/' }
     ],
 
     // 左侧栏：与顶部导航分组保持一致
@@ -346,10 +340,7 @@ export default defineConfig({
         {
           text: '关于',
           collapsed: false,
-          items: [
-            { text: '关于本站', link: '/about/' },
-            { text: '本站构建方法', link: '/about/build-method' }
-          ]
+          items: [{ text: '本站构建方法', link: '/about/' }]
         }
       ]
     },
